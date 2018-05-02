@@ -1,0 +1,19 @@
+{
+  "name": "trial_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"electron ."
+  },
+  "keywords": [],
+  "author": "Dhanasekar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "exceljs": "^1.4.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{
+      background-color: silver
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    .col-50{
+      float:left;
+      width:50%;
+      margin-top:7px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+            width: 80%;
+            margin-top: 0;
+        }
+    }
+    .main{
+      height:40px;
+      padding:6% 0 0;
+      margin:auto 250px;
+      font-size:20px;
+      font-style: bold;
+    }
+      .login{
+        background-color: seashell
+        width:380px;
+        padding:2% 0 0;
+        margin:auto
+      }
+      .form1{    background: aliceblue;
+        position:relative;
+        z-index:1;
+        max-width:380px;
+        margin:0 auto 100px;
+        padding:60px;
+        text-align:center;
+        box-shadow: 0 0 20px 0
+
+      }
+      .form1 label , .form1 input {
+        float:none;
+        display:inline-block;
+        vertical-align: middle
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <p ><b>This is the Form2 Handling</b></p>
+  </div>
+
+    <div class="login">
+
+<form class="container">
+  <p ></p>
+  <div class='row'>
+   <div class="col-25">
+  <label>Project Type</label>
+</div>
+<div class="col-75">
+  <input type="text" name="name" id="enquiry"><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-25">
+  <label>Client Type</label>
+</div>
+<div class="col-75">
+<select class="" name="">
+  <option value="new">NEW</option>
+  <option value="existing">EXISTING</option>
+</select><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-25">
+  <label>Client Name</label>
+</div>
+<div class="col-75">
+  <select class="" name="">
+    <option value="new">a1</option>
+    <option value="existing">a2</option>
+  </select>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-25">
+  <label>Due Date</label>
+</div>
+<div class="col-75">
+  <input type="text" name="pass" id="pass"><br><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-25">
+  <label>Assign Engineer</label>
+</div>
+<div class="col-75">
+  <select class="" name="">
+    <option value="new">a1</option>
+    <option value="existing">a2</option>
+  </select>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-25">
+  <label>Follow up Frequency</label>
+</div>
+<div class="col-75">
+  <select class="" name="">
+    <option value="new">Twice a Day</option>
+    <option value="existing">Once a Day</option>
+    <option value="">Twice a Week</option>
+    <option value="">Once a Week</option>
+  </select><br>
+</div>
+  <input type="submit"  class="col-50" name="button" id="btn3" value="Regret Message">
+
+<input type="submit" class="col-50" name="button" value="Assign Enquiry">
+</form>
+</div>
+    <script src="form2.js">
+
+    </script>
+  </body>
+</html>
